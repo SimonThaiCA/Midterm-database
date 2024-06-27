@@ -9,15 +9,13 @@
 
 ## Tables Required
 1. Customers: Stores information about the customers.
-* Attributes: CustomerID (Integer), Name (String), TotalSpent (Float)
-2. Authors: Stores information about the authors.
-* Attributes: AuthorID (Integer), Name (String), Genre (String), NumBooks (Integer), YearsActive (Integer)
-3. Books: Stores information about the books.
-* Attributes: BookID (Integer), Title (String), Genre (String), Format (String), Price (Float), AuthorID (Integer), Rating (Float), NumReviews (Integer)
-4. Reviews: Stores the reviews given by customers.
-* Attributes: ReviewID (Integer), CustomerID (Integer), BookID (Integer), Rating (Float), ReviewText (String), ReviewDate (Date)
-5. Sales: Stores information about the sales.
-* Attributes: SaleID (Integer), CustomerID (Integer), BookID (Integer), SaleDate (Date), Amount (Float)
+* Attributes: CustomerID (Integer), Name (String), TotalSpent (DECIMAL)
+2. Books: Stores information about the books.
+* Attributes: BookID (Integer), Title (String), Genre (String), Format (String), Price (DECIMAL), AuthorName (VARCHAR), Publish_Date（Date）， Rating (DECIMAL), NumReviews (Integer)
+3. Reviews: Stores the reviews given by customers.
+* Attributes: ReviewID (Integer), CustomerID (Integer), BookID (Integer), Rating (DECIMAL), ReviewText (String), ReviewDate (Date)
+4. Sales: Stores information about the sales.
+* Attributes: SaleID (Integer), CustomerID (Integer), BookID (Integer), SaleDate (Date), Amount (DECIMAL)
 
 ## DDL & DML
 ### Creat Table

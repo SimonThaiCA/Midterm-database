@@ -151,7 +151,7 @@ import pgPromise from 'pg-promise';
 const pgp = pgPromise();
 const db = pgp('postgres://username:password@localhost:3006/database');
 
-// Customers Table
+// Customers Table --Xinmeng Tai (8853954)
 async function createCustomer(customer: Customer) {
   await db.none('INSERT INTO Customers VALUES($1, $2, $3, $4, $5)', [customer.customer_ID, customer.Name, customer.Email, customer.join_date, customer.TotalSpent]);
 }
@@ -168,7 +168,7 @@ async function deleteCustomer(customer_ID: number) {
   await db.none('DELETE FROM Customers WHERE customer_ID = $1', [customer_ID]);
 }
 
-// Books Table
+// Books Table -- Gurpreet Singh Bhathal(8975528)
 async function createBook(book: Book) {
   await db.none('INSERT INTO Books VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9)', [book.book_ID, book.Title, book.Genre, book.Format, book.Price, book.AuthorName, book.Publish_Date, book.Rating, book.NumReviews]);
 }
@@ -185,7 +185,7 @@ async function deleteBook(book_ID: number) {
   await db.none('DELETE FROM Books WHERE book_ID = $1', [book_ID]);
 }
 
-// Reviews Table
+// Reviews Table -- Himanshu Deshwal(8956003)
 async function createReview(review: Review) {
   await db.none('INSERT INTO Reviews VALUES($1, $2, $3, $4, $5, $6)', [review.review_ID, review.customer_ID, review.book_ID, review.Rating, review.ReviewText, review.ReviewDate]);
 }
@@ -202,7 +202,7 @@ async function deleteReview(review_ID: number) {
   await db.none('DELETE FROM Reviews WHERE review_ID = $1', [review_ID]);
 }
 
-// Sales Table
+// Sales Table -- Xinmeng Tai (8853954), Gurpreet Singh Bhathal(8975528), Himanshu Deshwal(8956003)
 async function createSale(sale: Sale) {
   await db.none('INSERT INTO Sales VALUES($1, $2, $3, $4, $5)', [sale.sale_ID, sale.customer_ID, sale.book_ID, sale.SaleDate, sale.Amount]);
 }

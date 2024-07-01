@@ -7,6 +7,8 @@
 |  8975528      | Gurpreet Singh Bhathal|
 |  8956003      | Himanshu Deshwal |
 
+github address:https://github.com/SimonThaiCA/Midterm-database
+
 ## Tables Required
 1. Customers: Stores information about the customers.
 * Attributes: customer_ID (Integer), Name (String), TotalSpent (DECIMAL)

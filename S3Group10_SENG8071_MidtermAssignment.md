@@ -3,9 +3,9 @@
 ## ID & Name
 |     ID        |    Name        |
 | ------------- |:-------------: |
-|  8853954      | XinmengTai     |
-|  8975528      | Gurpreet Singh |
-|  8956003      | Himanshu       |
+|  8853954      | Xinmeng Tai    |
+|  8975528      | Gurpreet Singh Bhathal|
+|  8956003      | Himanshu Deshwal |
 
 ## Tables Required
 1. Customers: Stores information about the customers.
